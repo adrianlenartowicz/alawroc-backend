@@ -5,12 +5,15 @@ export class Form {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({nullable: true})
   phoneNumber: string;
 
-  @Column({ unique: true })
+  @Column({ unique: true, nullable: true })
   email: string;
 
   @Column()
   ageGroup: string;
+
+  @Column()
+  placement: string;
 }

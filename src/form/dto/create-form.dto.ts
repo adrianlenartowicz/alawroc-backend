@@ -9,4 +9,7 @@ export class CreateFormDto {
 
   @IsString()
   ageGroup: string;
+
+  @IsString()
+  placement: string;
 }
